@@ -1,0 +1,56 @@
+#usage "<b>Round all drills in all libraries in a directory</b>\n"
+       "<p>"
+       "Aftewards drills will be increased to Olimex standards, to fit plating of dualsided boards"
+       "<p>"
+       "Do not apply multiple to same libraries, as drills would increase every time"
+       "<p>"
+       "To make backup of libraries is strictly recommended"
+       "<p>"
+       "Edited by Siegfried Schwemmer"
+       "<p>"  
+       "Load any library from a library directory and execute this ULP."
+       "<p>"
+       "A report file 'report.txt' will be generated in the library directory"
+       "<p>"
+       "<author>Original example Author: support@cadsoft.de</author>"
+       "<author>Adapted by Rindert Nauta</author>"
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string a[], par, lbr_path, report_file, cmd = "", s, progname,automatic_mode;
+int    lbrpnt, x;
+
+
+//-------- main program --------------------------------------------------
+progname = filesetext(filename(argv[0]), "");
+library(L) {
+  lbr_path = filedir(L.name);
+  }
+report_file = lbr_path+"report.txt";
+
+lbrpnt = strtod(argv[1]);
+automatic_mode = argv[2]; 
+int choise;
+
+int n = fileglob(a, lbr_path+"*.lbr");
+
+if (n) {
+  if (lbrpnt==0 ) {       // First run     
+    automatic_mode = "0";    
+    choise= dlgMessageBox("<nobr> Rounding all drills to Olimex standards multiple <br>"+
+                           "In all libraries in<br><b>"+lbr_path+"</b><br>"
+                          ,"Automatic","Manual","Cancel");
+    if (choise==0)  automatic_mode = "1"; // automatic --> call drill_0.1_in_current_library.ulp in silent mode
+    if (choise==2) exit(0);      //cancel button
+    output(report_file,"wt") printf("Report for rounding drills in all libraries in "+lbr_path+"\n");
+  }
+  else  library(L){ 
+//    output(report_file, "at") printf("Processing %s\n",L.name); //   
+   }
+  lbrpnt++;
+  sprintf(par, "%d", lbrpnt);
+  if (lbrpnt > n) exit(0);
+  exit("OPEN '"+lbr_path+filename(a[lbrpnt-1])+"';\n"+                    //open lib
+       "RUN 'olimex_drill_standards_in_current_library'"+automatic_mode+";\n"+         //run round drills
+       "RUN '"+progname+"' "+par+" "+automatic_mode+"\n");                //return to this program (recursive) 
+}

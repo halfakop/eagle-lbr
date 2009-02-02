@@ -1,0 +1,151 @@
+#usage "<b>Round drills and holes to 0.1 mm multiple, in current library</b>\n"
+       "<p><b>0.1mm drills step, normal round</b>"
+       "<p>"
+       " Drills and holes are rounded down with a max of 0.02mm"
+       "<p>"
+       " The rest will be rounded up"
+       "<p>"
+       " Afterwards drills will be increased to Olimex standards, to fit plating of dualsided boards"
+       "<p>"
+       " Do not apply multiple to libraries, as drills would increase every time. Only apply one time to original libraries"
+       "<p>"
+       " To make backup of libraries in advance is strictly required"
+       "<p>"
+       " Edited by Siegfried Schwemmer"
+       "<p>" 
+       "<author>Adapted by Rindert Nauta</author>"
+
+
+int automatic_mode =  strtol(argv[1]); // used by drill_olimex_standards_in_all_libraries.ulp, no questions asked.
+
+int round_offset = 0.03;  // the normal rounding point = +0.005mm, new rounding point=0.005-round_offset   
+
+string script_change = "";
+string grid = "GRID MM FINEST;\n";
+string cmd,s;
+string report_string="", report_file;
+int    cntPac=0;
+int    cntchdrill = 0;
+
+// change Drill Diameter rounded 0.1 mm
+// set to Olimex sizes 0.7 mm, 0.9 mm, 1.0 mm, 1.1 mm, 1.3 mm, 1.5 mm, 2.1 mm, 3.3 mm. 
+// change and/or unREM values below for your own adaption. Dont mix sequence, descending order is required.
+
+void change_prillround(int x, int y, int drill) {
+  real isdrill = u2mm(drill);
+  real rval = round((isdrill+round_offset) * 10.0) / 10.0; // round value
+
+//if (rval==5.0) rval=5.0;	
+//if (rval==4.9) rval=4.9;	
+//if (rval==4.8) rval=4.8;	
+//if (rval==4.7) rval=4.7;	
+//if (rval==4.6) rval=4.6;	
+//if (rval==4.5) rval=4.5;	
+//if (rval==4.4) rval=4.4;	
+//if (rval==4.3) rval=4.3;	
+//if (rval==4.2) rval=4.2;	
+//if (rval==4.1) rval=4.1;	
+//if (rval==4.0) rval=4.0;	
+//if (rval==3.9) rval=3.9;	
+//if (rval==3.8) rval=3.8;	
+//if (rval==3.7) rval=3.7;	
+//if (rval==3.6) rval=3.6;	
+//if (rval==3.5) rval=3.5;	
+//if (rval==3.4) rval=3.4;	
+//if (rval==3.3) rval=3.3;	
+//if (rval==3.2) rval=3.3;	
+//if (rval==3.1) rval=3.3;	
+//if (rval==3.0) rval=3.3;	
+//if (rval==2.9) rval=3.3;	
+//if (rval==2.8) rval=3.3;	
+//if (rval==2.7) rval=3.3;	
+//if (rval==2.6) rval=3.3;	
+//if (rval==2.5) rval=3.3;	
+//if (rval==2.4) rval=3.3;	
+//if (rval==2.3) rval=3.3;	
+//if (rval==2.2) rval=3.3;	
+//if (rval==2.1) rval=2.1;	
+//if (rval==2.0) rval=2.1;	
+//if (rval==1.9) rval=2.1;	
+//if (rval==1.8) rval=2.1;	
+//if (rval==1.7) rval=2.1;	
+//if (rval==1.6) rval=2.1;	
+//if (rval==1.5) rval=1.5;	
+//if (rval==1.4) rval=1.5;	
+//if (rval==1.3) rval=1.5;	
+//if (rval==1.2) rval=1.3;	
+//if (rval==1.1) rval=1.3;	
+//if (rval==1.0) rval=1.1;	
+//if (rval==0.9) rval=1.0;	
+//if (rval==0.8) rval=0.9;	
+//if (rval==0.7) rval=0.9;	
+//if (rval==0.6) rval=0.7;	
+//if (rval==0.5) rval=0.6;	
+//if (rval==0.4) rval=0.5;	
+//if (rval==0.3) rval=0.4;	
+//if (rval==0.2) rval=0.3;	
+//if (rval==0.1) rval=0.2;	
+
+  if (abs(rval - isdrill) < 0.000001 ) return;     // drill is ok
+  cntchdrill++;
+  sprintf(s, "Change DRILL %.4f (%.4f %.4f);\n", rval, u2mm(x), u2mm(y));
+  cmd += s;
+}
+
+// ***************  MAIN ****************
+if (library) {
+   library(L) {
+      report_file = filedir(L.name)+"report.txt";
+      script_change = filesetext(L.name, "~~~.scr");
+      output(script_change, "wtD") {
+         int firstf = 1;
+         L.packages(P) {
+            cmd = "";
+            P.contacts(C) {
+               if (C.pad) change_prillround(C.pad.x, C.pad.y, C.pad.drill);
+            }
+            P.holes(H) { 
+                change_prillround(H.x, H.y, H.drill);
+            }
+            if (cmd) {
+               cntPac++;
+               report_string+=P.name+", ";
+               printf("EDIT %s.PAC;\n", P.name);
+               if (cntPac==1) printf("DISPLAY NONE 17 45;\n");  // set display pads & holes [in PAC editor!]
+               printf("%s",grid);
+               printf("%s",cmd);
+            }
+         }
+         // printf("GRID DEFAULT;\n");
+         printf("DISPLAY NONE 1 16 17 20 21 23 25 27 45 46 51;\n");  // my preferred view
+         if (automatic_mode) printf("\n;WRITE;\n");
+      }
+   }
+   s = "";
+   if (cntchdrill) {
+     library(L) sprintf(s, "<nobr>Library:<b> %s</b><br>%d Packages, %d Drills or Holes to change!<br>",
+                            L.name,cntPac,cntchdrill);
+     output(report_file,"at") library(L) 
+         printf("Library: %s\n %d Packages and %d Drills to change\n"+report_string+"\n\n",
+                 L.name,cntPac,cntchdrill); 
+   }
+   
+   if (!automatic_mode) { // not automatic --> popup menu
+     if (cntchdrill) { 
+         if (dlgMessageBox("<nobr>Rounding the drill diameter to Olimex standards multiple.<br></nobr>"+s,
+                           "Ok", "Cancel") == 1) exit(0);
+     } else { 
+         library(L) sprintf(s, "<nobr>Library:<b> %s</b><br>",L.name);
+         dlgMessageBox(s+"All drills are already Olimex standard multiple", "Ok");
+         exit(0);
+     }
+   }
+
+   if (cntchdrill) exit ("SCRIPT '" + script_change + "';\n");
+   else exit(0);
+}
+
+else {
+   dlgMessageBox("! Start this ULP in a Library");
+   exit (0);
+}
