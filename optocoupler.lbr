@@ -755,10 +755,10 @@ relay uses optically coupled MOSFET technology to pro-
 vide 1500V of input to output isolation. 
 &lt;/p&gt;
 &lt;table border=1&gt;
-&lt;tr&gt;&lt;th&gt;&amp;nbsp;&lt;/th&gt;&lt;th&gt;CPC1008N&lt;/th&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Load Voltage (V)&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Load Current (mA)&lt;/td&gt;&lt;td&gt;150&lt;/td&gt;&lt;/tr&gt;
-&lt;tr&gt;&lt;td&gt;Max R&lt;sub&gt;ON&lt;/sub&gt; (?)&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;th&gt;&amp;nbsp;&lt;/th&gt;&lt;th&gt;CPC1008N&lt;/th&gt;&lt;th&gt;CPC1016N&lt;/th&gt;&lt;th&gt;CPC1017N&lt;/th&gt;&lt;th&gt;CPC1035&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Load Voltage (V)&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;60&lt;/td&gt;&lt;td&gt;350&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Load Current (mA)&lt;/td&gt;&lt;td&gt;150&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Max R&lt;sub&gt;ON&lt;/sub&gt; (?)&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;35&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;
 
 &lt;ul&gt;
@@ -779,6 +779,7 @@ vide 1500V of input to output isolation.
 <technologies>
 <technology name="08"/>
 <technology name="16"/>
+<technology name="17"/>
 <technology name="35"/>
 </technologies>
 </device>
