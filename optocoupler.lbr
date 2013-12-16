@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -932,6 +932,41 @@ Source: http://www.alldatasheet.com/datasheet-pdf/pdf/214960/TOSHIBA/TLP280-4.ht
 <connect gate="G$4" pin="AC2" pad="8"/>
 <connect gate="G$4" pin="C" pad="10"/>
 <connect gate="G$4" pin="E" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP281-4" prefix="OK">
+<description>&lt;b&gt;TOSHIBA PHOTOCOUPLER GaAs IRED &amp; PHOTO-TRANSISTOR&lt;/b&gt;&lt;p&gt;
+Source: http://www.alldatasheet.com/datasheet-pdf/pdf/32424/TOSHIBA/TLP281.html214960/TOSHIBA/TLP281-4.html</description>
+<gates>
+<gate name="G$1" symbol="OK" x="2.54" y="33.02"/>
+<gate name="G$2" symbol="OK" x="2.54" y="15.24"/>
+<gate name="G$3" symbol="OK" x="2.54" y="-2.54"/>
+<gate name="G$4" symbol="OK" x="2.54" y="-20.32"/>
+</gates>
+<devices>
+<device name="" package="MINI-FLAT-16">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="COL" pad="16"/>
+<connect gate="G$1" pin="EMIT" pad="15"/>
+<connect gate="G$2" pin="A" pad="3"/>
+<connect gate="G$2" pin="C" pad="4"/>
+<connect gate="G$2" pin="COL" pad="14"/>
+<connect gate="G$2" pin="EMIT" pad="13"/>
+<connect gate="G$3" pin="A" pad="5"/>
+<connect gate="G$3" pin="C" pad="6"/>
+<connect gate="G$3" pin="COL" pad="12"/>
+<connect gate="G$3" pin="EMIT" pad="11"/>
+<connect gate="G$4" pin="A" pad="7"/>
+<connect gate="G$4" pin="C" pad="8"/>
+<connect gate="G$4" pin="COL" pad="10"/>
+<connect gate="G$4" pin="EMIT" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
