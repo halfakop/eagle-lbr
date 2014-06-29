@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -643,7 +643,6 @@
 <text x="217.17" y="10.16" size="2.286" layer="94" font="vector">&gt;LAST_DATE_TIME</text>
 <text x="230.505" y="5.08" size="2.54" layer="94" font="vector">&gt;SHEET</text>
 <text x="216.916" y="4.953" size="2.54" layer="94" font="vector">Sheet:</text>
-<text x="184.15" y="5.08" size="1.778" layer="94" font="vector">http://tuxotronic.org</text>
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
 </symbol>
 <symbol name="A4-35SC">
