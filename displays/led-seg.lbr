@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -695,40 +695,40 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="46.65" y1="21" x2="47.65" y2="20" width="0.127" layer="48" style="dashdot" curve="-90"/>
 <wire x1="0" y1="3" x2="49.5" y2="3" width="0.127" layer="21"/>
 <wire x1="0" y1="23" x2="49.5" y2="23" width="0.127" layer="21"/>
-<pad name="P$1" x="4.58" y="-0.15" drill="0.6"/>
-<pad name="P$2" x="7.12" y="-0.15" drill="0.6"/>
-<pad name="P$3" x="9.66" y="-0.15" drill="0.6"/>
-<pad name="P$4" x="12.2" y="-0.15" drill="0.6"/>
-<pad name="P$5" x="14.74" y="-0.15" drill="0.6"/>
-<pad name="P$6" x="17.28" y="-0.15" drill="0.6"/>
-<pad name="P$7" x="19.82" y="-0.15" drill="0.6"/>
-<pad name="P$8" x="22.36" y="-0.15" drill="0.6"/>
-<pad name="P$9" x="24.9" y="-0.15" drill="0.6"/>
-<pad name="P$10" x="27.44" y="-0.15" drill="0.6"/>
-<pad name="P$11" x="29.98" y="-0.15" drill="0.6"/>
-<pad name="P$12" x="32.52" y="-0.15" drill="0.6"/>
-<pad name="P$13" x="35.06" y="-0.15" drill="0.6"/>
-<pad name="P$14" x="37.6" y="-0.15" drill="0.6"/>
-<pad name="P$15" x="40.14" y="-0.15" drill="0.6"/>
-<pad name="P$16" x="42.68" y="-0.15" drill="0.6"/>
-<pad name="P$17" x="45.22" y="-0.15" drill="0.6"/>
-<pad name="P$18" x="45.22" y="26.15" drill="0.6"/>
-<pad name="P$19" x="42.68" y="26.15" drill="0.6"/>
-<pad name="P$20" x="40.14" y="26.15" drill="0.6"/>
-<pad name="P$21" x="37.6" y="26.15" drill="0.6"/>
-<pad name="P$22" x="35.06" y="26.15" drill="0.6"/>
-<pad name="P$23" x="32.52" y="26.15" drill="0.6"/>
-<pad name="P$24" x="29.98" y="26.15" drill="0.6"/>
-<pad name="P$25" x="27.44" y="26.15" drill="0.6"/>
-<pad name="P$26" x="24.9" y="26.15" drill="0.6"/>
-<pad name="P$27" x="22.36" y="26.15" drill="0.6"/>
-<pad name="P$28" x="19.82" y="26.15" drill="0.6"/>
-<pad name="P$29" x="17.28" y="26.15" drill="0.6"/>
-<pad name="P$30" x="14.74" y="26.15" drill="0.6"/>
-<pad name="P$31" x="12.2" y="26.15" drill="0.6"/>
-<pad name="P$32" x="9.66" y="26.15" drill="0.6"/>
-<pad name="P$33" x="7.12" y="26.15" drill="0.6"/>
-<pad name="P$34" x="4.58" y="26.15" drill="0.6"/>
+<pad name="COM1" x="4.58" y="-0.15" drill="0.6"/>
+<pad name="1E" x="7.12" y="-0.15" drill="0.6"/>
+<pad name="1D" x="9.66" y="-0.15" drill="0.6"/>
+<pad name="1C" x="12.2" y="-0.15" drill="0.6"/>
+<pad name="DP1" x="14.74" y="-0.15" drill="0.6"/>
+<pad name="2E" x="17.28" y="-0.15" drill="0.6"/>
+<pad name="2D" x="19.82" y="-0.15" drill="0.6"/>
+<pad name="2C" x="22.36" y="-0.15" drill="0.6"/>
+<pad name="DP2" x="24.9" y="-0.15" drill="0.6"/>
+<pad name="3E" x="27.44" y="-0.15" drill="0.6"/>
+<pad name="3D" x="29.98" y="-0.15" drill="0.6"/>
+<pad name="3C" x="32.52" y="-0.15" drill="0.6"/>
+<pad name="DP3" x="35.06" y="-0.15" drill="0.6"/>
+<pad name="4E" x="37.6" y="-0.15" drill="0.6"/>
+<pad name="4D" x="40.14" y="-0.15" drill="0.6"/>
+<pad name="4C" x="42.68" y="-0.15" drill="0.6"/>
+<pad name="DP4" x="45.22" y="-0.15" drill="0.6"/>
+<pad name="4G" x="45.22" y="26.15" drill="0.6"/>
+<pad name="4B" x="42.68" y="26.15" drill="0.6"/>
+<pad name="4A" x="40.14" y="26.15" drill="0.6"/>
+<pad name="4F" x="37.6" y="26.15" drill="0.6"/>
+<pad name="3G" x="35.06" y="26.15" drill="0.6"/>
+<pad name="3B" x="32.52" y="26.15" drill="0.6"/>
+<pad name="3A" x="29.98" y="26.15" drill="0.6"/>
+<pad name="3F" x="27.44" y="26.15" drill="0.6"/>
+<pad name="2G" x="24.9" y="26.15" drill="0.6"/>
+<pad name="2B" x="22.36" y="26.15" drill="0.6"/>
+<pad name="2A" x="19.82" y="26.15" drill="0.6"/>
+<pad name="2F" x="17.28" y="26.15" drill="0.6"/>
+<pad name="1G" x="14.74" y="26.15" drill="0.6"/>
+<pad name="1B" x="12.2" y="26.15" drill="0.6"/>
+<pad name="1A" x="9.66" y="26.15" drill="0.6"/>
+<pad name="1F" x="7.12" y="26.15" drill="0.6"/>
+<pad name="COM2" x="4.58" y="26.15" drill="0.6"/>
 <dimension x1="4.58" y1="26.15" x2="45.22" y2="26.15" x3="24.9" y3="29.472303125" textsize="1.27" layer="48"/>
 <text x="24.75" y="13" size="8" layer="48" font="vector" ratio="20" align="center">8.8.8.8</text>
 <dimension x1="0" y1="26" x2="0" y2="0" x3="-4" y3="13" textsize="1.27" layer="48"/>
@@ -1674,6 +1674,49 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <text x="9.652" y="0.762" size="1.6764" layer="94">G</text>
 <text x="13.462" y="-7.874" size="1.6764" layer="94">H</text>
 </symbol>
+<symbol name="FP1125P">
+<wire x1="-22.86" y1="-12.7" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-12.7" x2="22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="12.7" x2="-22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="12.7" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
+<pin name="COM1" x="-20.32" y="-17.78" visible="pin" length="middle" direction="out" rot="R90"/>
+<pin name="1E" x="-17.78" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="1D" x="-15.24" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="1C" x="-12.7" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="DP1" x="-10.16" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="2E" x="-7.62" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="2D" x="-5.08" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="2C" x="-2.54" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="DP2" x="0" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="3E" x="2.54" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="3D" x="5.08" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="3C" x="7.62" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="DP3" x="10.16" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="4E" x="12.7" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="4D" x="15.24" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="4C" x="17.78" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<pin name="DP4" x="20.32" y="-17.78" visible="pin" length="middle" direction="in" rot="R90"/>
+<text x="0" y="0" size="6.4516" layer="94" align="center">8.8.8.8.</text>
+<pin name="4G" x="20.32" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="4B" x="17.78" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="4A" x="15.24" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="4F" x="12.7" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="3G" x="10.16" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="3B" x="7.62" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="3A" x="5.08" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="3F" x="2.54" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="2G" x="0" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="2B" x="-2.54" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="2A" x="-5.08" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="2F" x="-7.62" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="1G" x="-10.16" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="1B" x="-12.7" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="1A" x="-15.24" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="1F" x="-17.78" y="17.78" visible="pin" length="middle" direction="in" rot="R270"/>
+<pin name="COM2" x="-20.32" y="17.78" visible="pin" length="middle" direction="out" rot="R270"/>
+<text x="-25.4" y="0" size="1.6764" layer="95" rot="R90" align="center">&gt;NAME</text>
+<text x="25.4" y="0" size="1.6764" layer="96" rot="R90" align="center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A-505" prefix="HL">
@@ -2310,6 +2353,55 @@ Common &lt;b&gt;anode&lt;/b&gt;.
 <connect gate="G$1" pin="F" pad="P$11"/>
 <connect gate="G$1" pin="G" pad="P$12"/>
 <connect gate="G$1" pin="H" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FP1125P" prefix="LCD">
+<description>http://chipster.ru/catalog/optic/lcd-indicators/3345.html</description>
+<gates>
+<gate name="G$1" symbol="FP1125P" x="-22.86" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="FP1125P">
+<connects>
+<connect gate="G$1" pin="1A" pad="1A"/>
+<connect gate="G$1" pin="1B" pad="1B"/>
+<connect gate="G$1" pin="1C" pad="1C"/>
+<connect gate="G$1" pin="1D" pad="1D"/>
+<connect gate="G$1" pin="1E" pad="1E"/>
+<connect gate="G$1" pin="1F" pad="1F"/>
+<connect gate="G$1" pin="1G" pad="1G"/>
+<connect gate="G$1" pin="2A" pad="2A"/>
+<connect gate="G$1" pin="2B" pad="2B"/>
+<connect gate="G$1" pin="2C" pad="2C"/>
+<connect gate="G$1" pin="2D" pad="2D"/>
+<connect gate="G$1" pin="2E" pad="2E"/>
+<connect gate="G$1" pin="2F" pad="2F"/>
+<connect gate="G$1" pin="2G" pad="2G"/>
+<connect gate="G$1" pin="3A" pad="3A"/>
+<connect gate="G$1" pin="3B" pad="3B"/>
+<connect gate="G$1" pin="3C" pad="3C"/>
+<connect gate="G$1" pin="3D" pad="3D"/>
+<connect gate="G$1" pin="3E" pad="3E"/>
+<connect gate="G$1" pin="3F" pad="3F"/>
+<connect gate="G$1" pin="3G" pad="3G"/>
+<connect gate="G$1" pin="4A" pad="4A"/>
+<connect gate="G$1" pin="4B" pad="4B"/>
+<connect gate="G$1" pin="4C" pad="4C"/>
+<connect gate="G$1" pin="4D" pad="4D"/>
+<connect gate="G$1" pin="4E" pad="4E"/>
+<connect gate="G$1" pin="4F" pad="4F"/>
+<connect gate="G$1" pin="4G" pad="4G"/>
+<connect gate="G$1" pin="COM1" pad="COM1"/>
+<connect gate="G$1" pin="COM2" pad="COM2"/>
+<connect gate="G$1" pin="DP1" pad="DP1"/>
+<connect gate="G$1" pin="DP2" pad="DP2"/>
+<connect gate="G$1" pin="DP3" pad="DP3"/>
+<connect gate="G$1" pin="DP4" pad="DP4"/>
 </connects>
 <technologies>
 <technology name=""/>
