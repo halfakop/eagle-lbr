@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -170,6 +170,28 @@
 <rectangle x1="0.4064" y1="-0.65" x2="1" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
 </package>
+<package name="BOURNS-MF-R">
+<pad name="P$1" x="-5.1054" y="0" drill="0.9"/>
+<pad name="P$2" x="5.1054" y="0" drill="0.9"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
+<text x="-3.81" y="2.54" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27" font="vector" ratio="18">&gt;VALUE</text>
+</package>
+<package name="JK16-03-11">
+<pad name="P$1" x="-2.54" y="0" drill="0.8"/>
+<pad name="P$2" x="2.54" y="0" drill="0.8"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="R_POLY">
@@ -248,6 +270,39 @@
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MF-R500+" prefix="F">
+<description>http://www.farnell.com/datasheets/1817521.pdf</description>
+<gates>
+<gate name="G$1" symbol="R_POLY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BOURNS-MF-R">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JK16-03-11" prefix="F">
+<gates>
+<gate name="G$1" symbol="R_POLY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JK16-03-11">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
