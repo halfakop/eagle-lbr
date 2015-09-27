@@ -1299,10 +1299,9 @@ Width, External:4.05mm&lt;/li&gt;
 </devices>
 </deviceset>
 <deviceset name="MMBT2222" prefix="Q">
-<description>General Purpose Transistors
-NPN Silicon
+<description>&lt;h1&gt;General Purpose Transistors, NPN Silicon&lt;/h1&gt;
 
-&lt;table border=1&gt;
+&lt;table border="1"&gt;
 &lt;tr&gt; &lt;th&gt;Rating&lt;/th&gt; &lt;th&gt;MMBT2222LT1G&lt;/th&gt; &lt;th&gt;MMBT2222ALT1G&lt;/th&gt; &lt;/tr&gt;
 &lt;tr&gt; &lt;td&gt;Collector-Emitter Voltage (V&lt;sub&gt;CEO&lt;/sub&gt;)&lt;/td&gt; &lt;td&gt;30 Vdc&lt;/td&gt; &lt;td&gt;40 Vdc&lt;/td&gt; &lt;/tr&gt;
 &lt;tr&gt; &lt;td&gt;Collector-Base Voltage  (V&lt;sub&gt;CBO&lt;/sub&gt;)&lt;/td&gt; &lt;td&gt;60 Vdc&lt;/td&gt; &lt;td&gt;75 Vdc&lt;/td&gt; &lt;/tr&gt;
