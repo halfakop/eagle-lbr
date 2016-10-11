@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -49,6 +49,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -115,6 +116,184 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
 </package>
+<package name="UFQFPN20">
+<circle x="-0.9" y="0.9" radius="0.14141875" width="0.05" layer="25"/>
+<wire x1="-2.1" y1="1" x2="-1.8" y2="1" width="0.05" layer="25"/>
+<wire x1="-1.8" y1="1" x2="-1.9" y2="1.1" width="0.05" layer="25"/>
+<wire x1="-1.8" y1="1" x2="-1.9" y2="0.9" width="0.05" layer="25"/>
+<wire x1="-1.6" y1="1.3" x2="-1.6" y2="1.6" width="0.05" layer="25"/>
+<wire x1="-1.6" y1="1.6" x2="-1.3" y2="1.6" width="0.05" layer="25"/>
+<wire x1="1.3" y1="1.6" x2="1.6" y2="1.6" width="0.05" layer="25"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="1.3" width="0.05" layer="25"/>
+<wire x1="1.6" y1="-1.3" x2="1.6" y2="-1.6" width="0.05" layer="25"/>
+<wire x1="1.6" y1="-1.6" x2="1.3" y2="-1.6" width="0.05" layer="25"/>
+<wire x1="-1.3" y1="-1.6" x2="-1.6" y2="-1.6" width="0.05" layer="25"/>
+<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="-1.3" width="0.05" layer="25"/>
+<smd name="P$1" x="-1.5" y="1" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$2" x="-1.3" y="0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$3" x="-1.3" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1.3" y="-0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$5" x="-1.5" y="-1" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$6" x="-1" y="-1.5" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$7" x="-0.5" y="-1.3" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$8" x="0" y="-1.3" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$9" x="0.5" y="-1.3" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$10" x="1" y="-1.5" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$11" x="1.5" y="-1" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$12" x="1.3" y="-0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$13" x="1.3" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$14" x="1.3" y="0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$15" x="1.5" y="1" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$16" x="1" y="1.5" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$17" x="0.5" y="1.3" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$18" x="0" y="1.3" dx="0.7" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$19" x="-0.5" y="1.3" dx="0.7" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$20" x="-1" y="1.5" dx="0.3" dy="0.3" layer="1" rot="R270"/>
+<polygon width="0.001" layer="1">
+<vertex x="-1.35" y="0.85"/>
+<vertex x="-1.15" y="0.85"/>
+<vertex x="-1.15" y="1"/>
+<vertex x="-1.3" y="1.15"/>
+<vertex x="-1.35" y="1.15"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="-0.85" y="1.35"/>
+<vertex x="-0.85" y="1.15"/>
+<vertex x="-1" y="1.15"/>
+<vertex x="-1.15" y="1.3"/>
+<vertex x="-1.15" y="1.35"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="1.15" y="1.35"/>
+<vertex x="1.15" y="1.3"/>
+<vertex x="1" y="1.15"/>
+<vertex x="0.85" y="1.15"/>
+<vertex x="0.85" y="1.35"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="1.35" y="1.15"/>
+<vertex x="1.3" y="1.15"/>
+<vertex x="1.15" y="1"/>
+<vertex x="1.15" y="0.85"/>
+<vertex x="1.35" y="0.85"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="1.35" y="-1.15"/>
+<vertex x="1.3" y="-1.15"/>
+<vertex x="1.15" y="-1"/>
+<vertex x="1.15" y="-0.85"/>
+<vertex x="1.35" y="-0.85"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="1.15" y="-1.35"/>
+<vertex x="1.15" y="-1.3"/>
+<vertex x="1" y="-1.15"/>
+<vertex x="0.85" y="-1.15"/>
+<vertex x="0.85" y="-1.35"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="-1.15" y="-1.35"/>
+<vertex x="-1.15" y="-1.3"/>
+<vertex x="-1" y="-1.15"/>
+<vertex x="-0.85" y="-1.15"/>
+<vertex x="-0.85" y="-1.35"/>
+</polygon>
+<polygon width="0.001" layer="1">
+<vertex x="-1.35" y="-1.15"/>
+<vertex x="-1.3" y="-1.15"/>
+<vertex x="-1.15" y="-1"/>
+<vertex x="-1.15" y="-0.85"/>
+<vertex x="-1.35" y="-0.85"/>
+</polygon>
+<polygon width="0.001" layer="29">
+<vertex x="-1.25" y="-0.75"/>
+<vertex x="-1.05" y="-0.75"/>
+<vertex x="-1.05" y="-1.05"/>
+<vertex x="-0.75" y="-1.05"/>
+<vertex x="-0.75" y="-1.25"/>
+<vertex x="-1.25" y="-1.25"/>
+</polygon>
+<polygon width="0.001" layer="29">
+<vertex x="-1.05" y="1.05"/>
+<vertex x="-0.75" y="1.05"/>
+<vertex x="-0.75" y="1.25"/>
+<vertex x="-1.25" y="1.25"/>
+<vertex x="-1.25" y="0.75"/>
+<vertex x="-1.05" y="0.75"/>
+</polygon>
+<polygon width="0.001" layer="29">
+<vertex x="1.05" y="1.05"/>
+<vertex x="1.05" y="0.75"/>
+<vertex x="1.25" y="0.75"/>
+<vertex x="1.25" y="1.25"/>
+<vertex x="0.75" y="1.25"/>
+<vertex x="0.75" y="1.05"/>
+</polygon>
+<polygon width="0.001" layer="29">
+<vertex x="1.05" y="-1.05"/>
+<vertex x="1.05" y="-0.75"/>
+<vertex x="1.25" y="-0.75"/>
+<vertex x="1.25" y="-1.25"/>
+<vertex x="0.75" y="-1.25"/>
+<vertex x="0.75" y="-1.05"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="-1.35" y="-0.85"/>
+<vertex x="-1.15" y="-0.85"/>
+<vertex x="-1.15" y="-1"/>
+<vertex x="-1.3" y="-1.15"/>
+<vertex x="-1.35" y="-1.15"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="-1.15" y="-1.35"/>
+<vertex x="-1.15" y="-1.3"/>
+<vertex x="-1" y="-1.15"/>
+<vertex x="-0.85" y="-1.15"/>
+<vertex x="-0.85" y="-1.35"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="-1.35" y="1.15"/>
+<vertex x="-1.3" y="1.15"/>
+<vertex x="-1.15" y="1"/>
+<vertex x="-1.15" y="0.85"/>
+<vertex x="-1.35" y="0.85"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="-1.15" y="1.35"/>
+<vertex x="-1.15" y="1.3"/>
+<vertex x="-1" y="1.15"/>
+<vertex x="-0.85" y="1.15"/>
+<vertex x="-0.85" y="1.35"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="0.85" y="1.35"/>
+<vertex x="0.85" y="1.15"/>
+<vertex x="1" y="1.15"/>
+<vertex x="1.15" y="1.3"/>
+<vertex x="1.15" y="1.35"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="1.3" y="1.15"/>
+<vertex x="1.35" y="1.15"/>
+<vertex x="1.35" y="0.85"/>
+<vertex x="1.15" y="0.85"/>
+<vertex x="1.15" y="1"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="0.85" y="-1.15"/>
+<vertex x="0.85" y="-1.35"/>
+<vertex x="1.15" y="-1.35"/>
+<vertex x="1.15" y="-1.3"/>
+<vertex x="1" y="-1.15"/>
+</polygon>
+<polygon width="0.001" layer="31">
+<vertex x="1.15" y="-1"/>
+<vertex x="1.3" y="-1.15"/>
+<vertex x="1.35" y="-1.15"/>
+<vertex x="1.35" y="-0.85"/>
+<vertex x="1.15" y="-0.85"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="STM8S003F">
@@ -176,6 +355,33 @@ data EEPROM, 10-bit ADC, 3 timers, UART, SPI, I2C</description>
 <connect gate="G$1" pin="PD6/UART1_RX/AIN6" pad="3"/>
 <connect gate="G$1" pin="VCAP" pad="8"/>
 <connect gate="G$1" pin="VDD" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="K3" package="UFQFPN20">
+<connects>
+<connect gate="G$1" pin="!RST" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="OSCIN/PA1" pad="P$2"/>
+<connect gate="G$1" pin="OSCOUT/PA2" pad="P$3"/>
+<connect gate="G$1" pin="PA3/TIM2_CH3/[SPI_NSS]" pad="P$7"/>
+<connect gate="G$1" pin="PB4/I2C_SCL/[ADC_ETR]" pad="P$9"/>
+<connect gate="G$1" pin="PB5/I2C_SDA/[TIM1_BKIN]" pad="P$8"/>
+<connect gate="G$1" pin="PC3/TIM1_CH3/[TLI]/[!TIM1_CH1!]" pad="P$10"/>
+<connect gate="G$1" pin="PC4/TIM1_CH4/CLK_CCO/AIN2/[!TIM1_CH2!]" pad="P$11"/>
+<connect gate="G$1" pin="PC5/SPI_SCK/[TIM2_CH1]" pad="P$12"/>
+<connect gate="G$1" pin="PC6/SPI_MOSI/[TIM1_CH1]" pad="P$13"/>
+<connect gate="G$1" pin="PC7/SPI_MISO/[TIM1_CH2]" pad="P$14"/>
+<connect gate="G$1" pin="PD1/SWIM" pad="P$15"/>
+<connect gate="G$1" pin="PD2/AIN3/[TIM2_CH3]" pad="P$16"/>
+<connect gate="G$1" pin="PD3/AIN4/TIM2_CH2/ADC_ETR" pad="P$17"/>
+<connect gate="G$1" pin="PD4/UART1_CK/TIM2_CH1/BEEP" pad="P$18"/>
+<connect gate="G$1" pin="PD5/UART1_TX/AIN5" pad="P$19"/>
+<connect gate="G$1" pin="PD6/UART1_RX/AIN6" pad="P$20"/>
+<connect gate="G$1" pin="VCAP" pad="P$5"/>
+<connect gate="G$1" pin="VDD" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
