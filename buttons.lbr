@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -427,6 +427,17 @@ EC12E series with push-on switch</description>
 <wire x1="7.9" y1="-2.05" x2="7.9" y2="-2.95" width="0.127" layer="21"/>
 <wire x1="7.9" y1="-2.95" x2="7.85" y2="-3" width="0.127" layer="21"/>
 <wire x1="7.85" y1="-3" x2="6.1" y2="-3" width="0.127" layer="21"/>
+</package>
+<package name="TO92S">
+<smd name="GND" x="0" y="0" dx="2.54" dy="0.635" layer="1" rot="R270"/>
+<smd name="OUT1" x="1.27" y="0" dx="2.54" dy="0.635" layer="1" rot="R270"/>
+<smd name="VDD" x="-1.27" y="0" dx="2.54" dy="0.635" layer="1" rot="R270"/>
+<wire x1="-2.54" y1="6.54" x2="2.54" y2="6.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="6.54" x2="2.54" y2="1.46" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.46" x2="-2.54" y2="1.46" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="1.46" x2="-2.54" y2="6.54" width="0.127" layer="21"/>
+<text x="-2.4" y="1.794" size="1.016" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.81" size="1.016" layer="27" font="vector">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -879,6 +890,45 @@ Source: http://www3.alps.co.jp/WebObjects/catalog.woa/PDF/E/Switch/Tact/SKHM/SKH
 <connect gate="G$1" pin="P1" pad="P1"/>
 <connect gate="G$1" pin="S" pad="S"/>
 <connect gate="G$1" pin="S1" pad="S1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI720X" prefix="H">
+<description>&lt;h1&gt;Si720x Switch/Latch Hall Effect Magnetic Position Sensor&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href="https://www.silabs.com/documents/public/data-sheets/si720x-data-sheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Si7201/2/3/4/5/6 family of Hall effect magnetic sensors and latches from Silicon Labs combines a chopper-stabilized Hall element with a low-noise analog amplifier, 13-bit analog-to-digital converter, and a flexible comparator circuit. Leveraging Silicon Labs' proven CMOS design techniques, the Si720x family incorporates digital signal processing to provide precise compensation for temperature and offset drift.&lt;/p&gt;
+
+&lt;p&gt;Compared with existing Hall effect sensors, the Si720x family offers industry-leading sensitivity, which enables use with larger air gaps and smaller magnets. For batterypowered applications, the Si720x family offers very low power consumption to improve
+operating life. For automotive applications, the Si720x family in SOT23 packages is AEC-Q100 qualified.&lt;/p&gt;
+
+&lt;p&gt;The Si720x devices are offered in 3-pin SOT23 and TO-92 packages, with power, ground, and a single output pin that goes high or low as the magnetic field increases. With the three-pin package, tamper indication is by the pin going back to its zero field level at high magnetic field.&lt;/p&gt;
+
+&lt;p&gt;In the 5-pin SOT23 and 8-pin DFN(coming soon) packages, pins are available for both sleep mode activation and separate tamper indication.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="HALL-KEY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO92S" package="TO92S">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="OUT" pad="OUT1"/>
+<connect gate="G$1" pin="VCC" pad="VDD"/>
 </connects>
 <technologies>
 <technology name=""/>
