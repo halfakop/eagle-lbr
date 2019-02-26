@@ -454,6 +454,16 @@ EC12E series with push-on switch</description>
 <rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.4954" x2="-0.7112" y2="-0.9112" layer="51"/>
 </package>
+<package name="PG-SSO-3-2">
+<smd name="CENTER" x="0" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="LEFT" x="-1.27" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="RIGHT" x="1.27" y="0" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<wire x1="-2.08" y1="0.8" x2="2.08" y2="0.8" width="0.127" layer="51"/>
+<wire x1="2.08" y1="0.8" x2="2.08" y2="4.1" width="0.127" layer="51"/>
+<wire x1="2.08" y1="4.1" x2="-2.08" y2="4.1" width="0.127" layer="51"/>
+<wire x1="-2.08" y1="4.1" x2="-2.08" y2="0.8" width="0.127" layer="51"/>
+<text x="-2.08" y="-1.8" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HALL-KEY">
