@@ -961,6 +961,55 @@ operating life. For automotive applications, the Si720x family in SOT23 packages
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLE4906" prefix="H">
+<description>&lt;h1&gt;TLE4906&lt;/h1&gt;
+&lt;h2&gt;Overview&lt;/h2&gt;
+&lt;p&gt;The TLE4906 is a high precision Hall effect switch with
+highly accurate switching thresholds for operating
+temperatures up to 150°C.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2.7V to 24V supply voltage&lt;/li&gt;
+&lt;li&gt;Operation from unregulated power supply&lt;/li&gt;
+&lt;li&gt;High sensitivity and high stability of the magnetic switching points&lt;/li&gt;
+&lt;li&gt;High resistance to mechanical stress by Active Error Compensation&lt;/li&gt;
+&lt;li&gt;Reverse battery protection (-18V)&lt;/li&gt;
+&lt;li&gt;Superior temperature stability&lt;/li&gt;
+&lt;li&gt;Peak temperatures up to 195°C without damage&lt;/li&gt;
+&lt;li&gt;Low jitter (typ. 1µs)&lt;/li&gt;
+&lt;li&gt;High ESD performance (± 6kV HBM)&lt;/li&gt;
+&lt;li&gt;Digital output signal&lt;/li&gt;
+&lt;li&gt;SMD package SC59 (SOT23 compatible) - (TLE4906K))&lt;/li&gt;
+&lt;li&gt;Leaded package PG-SSO-3-2 - (TLE4906L)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Target Applications&lt;/h2&gt;
+&lt;p&gt;Target applications for TLE4906 are all automotive applications which require a high precision Hall switch for position sensing with a operating temperature range from -40°C to +150°C.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="HALL-KEY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="K" package="SC59">
+<connects>
+<connect gate="G$1" pin="GND" pad="C"/>
+<connect gate="G$1" pin="OUT" pad="E"/>
+<connect gate="G$1" pin="VCC" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="PG-SSO-3-2">
+<connects>
+<connect gate="G$1" pin="GND" pad="CENTER"/>
+<connect gate="G$1" pin="OUT" pad="RIGHT"/>
+<connect gate="G$1" pin="VCC" pad="LEFT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
